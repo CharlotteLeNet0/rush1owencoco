@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>exam2step_1/</title>
+    <meta name="" content="">
+
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+    <form action="./" method="_POST">
+        <div>
+            <label for="sexe">Sélectionnez votre genre :</label><br>
+            <label for="sexeh">Homme</label>
+            <input type="radio" id="sexeh" name="sexe" value="Homme" checked>
+            <label for="sexef">Femme</label>
+            <input type="radio" id="sexef" name="sexe" value="Femme" checked>
+            <label for="sexea">Autre</label>
+            <input type="radio" id="sexea" name="sexe" value="Autre" checked><br>
+        </div>
+        <div>
+            <label for="civilité">Selectionnez votre civilité :</label><br>
+            <select name="civilité" id="pet-select">
+                <option value="M.">M.</option>
+                <option value="Mme.">Mme.</option>
+            </select>
+        </div>
+        <div>
+            <label for="lname">Entrez votre nom :</label><br>
+            <input type="text" id="nom" name="nom"><br>
+        </div>
+        <div>
+            <label for="mail">Entrez votre e-mail :</label><br>
+            <input type="email" id="mail" name="user_mail"><br>
+        </div>
+        <div>
+            <label for="phone">Entrez votre numéro de téléphone :</label><br>
+            <input type="tel" id="phone" name="phone" pattern="^0[0-9]{8}"><br>
+            <small>Format: 01 23 45 67 89</small>
+        </div>
+        <div>
+            <label for="homepage">Ajoutez une url :</label><br>
+            <input type="url" id="homepage" name="homepage"><br>
+        </div>
+        <div>
+            <label for="start">Date de naissance :</label><br>
+            <input type="date" id="start" name="trip-start" value="" min="1910-01-01" max="" ><br>
+        </div>
+        <div>
+            <label for="choix1">Quels sont vos hobbies :</label><br>
+            <input type="checkbox" name="choix1" value="1"> Jeux video
+            <input type="checkbox" name="choix2" value="2"> Cinema
+            <input type="checkbox" name="choix3" value="3"> Lecture
+            <input type="checkbox" name="choix4" value="4"> Sport
+            <input type="checkbox" name="choix4" value="4"> Informatique
+        </div>
+        <div>
+            <input id="token" name="token" type="hidden" value="my first website">
+        </div>
+        <div>
+            <input type="submit" value="validation">
+        </div>
+    </form>
+</body>
+</html>
