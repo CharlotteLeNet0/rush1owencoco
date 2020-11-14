@@ -7,51 +7,53 @@
     <title>exam2step_1/</title>
     <meta name="" content="">
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="my_style.css">
+    <script type="text/javascript" src="my_script.js"></script>
 
 </head>
 
 <body>
+    <div>
     <form action="./" method="_POST">
-        <div>
-            <label for="sexe">Sélectionnez votre genre :</label><br>
+        <div class="box">
+            <label for="sexe">Sélectionnez votre genre :</label>
             <label for="sexeh">Homme</label>
-            <input type="radio" id="sexeh" name="sexe" value="Homme" checked>
+            <input type="radio" id="sexeh" name="sexe" value="Homme">
             <label for="sexef">Femme</label>
-            <input type="radio" id="sexef" name="sexe" value="Femme" checked>
+            <input type="radio" id="sexef" name="sexe" value="Femme">
             <label for="sexea">Autre</label>
-            <input type="radio" id="sexea" name="sexe" value="Autre" checked><br>
+            <input type="radio" id="sexea" name="sexe" value="Autre"><br>
         </div>
         <div>
-            <label for="civilité">Selectionnez votre civilité :</label><br>
+            <label for="civilité">Selectionnez votre civilité :</label>
             <select name="civilité" id="pet-select">
                 <option value="M.">M.</option>
                 <option value="Mme.">Mme.</option>
             </select>
         </div>
         <div>
-            <label for="lname">Entrez votre nom :</label><br>
+            <label for="lname">Entrez votre nom :</label>
             <input type="text" id="nom" name="nom"><br>
         </div>
-        <div>
-            <label for="mail">Entrez votre e-mail :</label><br>
+        <div class="box">
+            <label for="mail">Entrez votre e-mail :</label>
             <input type="email" id="mail" name="user_mail"><br>
         </div>
         <div>
-            <label for="phone">Entrez votre numéro de téléphone :</label><br>
+            <label for="phone">Entrez votre numéro de téléphone :</label>
             <input type="tel" id="phone" name="phone" pattern="^0[0-9]{8}"><br>
             <small>Format: 01 23 45 67 89</small>
         </div>
         <div>
-            <label for="homepage">Ajoutez une url :</label><br>
+            <label for="homepage">Ajoutez une url :</label>
             <input type="url" id="homepage" name="homepage"><br>
         </div>
-        <div>
-            <label for="start">Date de naissance :</label><br>
+        <div class="box">
+            <label for="start">Date de naissance :</label>
             <input type="date" id="start" name="trip-start" value="" min="1910-01-01" max="" ><br>
         </div>
         <div>
-            <label for="choix1">Quels sont vos hobbies :</label><br>
+            <label for="choix1">Quels sont vos hobbies :</label>
             <input type="checkbox" name="choix1" value="1"> Jeux video
             <input type="checkbox" name="choix2" value="2"> Cinema
             <input type="checkbox" name="choix3" value="3"> Lecture
@@ -62,8 +64,9 @@
             <input id="token" name="token" type="hidden" value="my first website">
         </div>
         <div>
-            <input type="submit" value="validation">
+            <input id='validation' type="submit" value="validation">
         </div>
     </form>
+    </div>
 </body>
 </html>

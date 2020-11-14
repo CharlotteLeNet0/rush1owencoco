@@ -1,0 +1,33 @@
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 40px;
+    color: #000000;
+    background: #c7d0e6f1;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    border: 15px solid rgb(0, 51, 128);
+    padding: 30px;
+    margin: 20px;
+    background: #5a76c2f1;
+  }
+.box {
+    border: dashed blue 2px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+#validation {
+    border-radius: 5px;
+}
+div {
+    padding: 20px 20px 20px 20px;
+}
+input:hover {
+    background : #0565b4;
+    color: #0cf8e4;
+    cursor:pointer;
+}
