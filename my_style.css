@@ -1,33 +1,52 @@
 body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 100;
     font-size: 12px;
     line-height: 40px;
     color: #000000;
-    background: #c7d0e6f1;
+    background: #fffffff1;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 form {
-    display: flex;
-    flex-direction: column;
     width: 570px;
-    border: 15px solid rgb(0, 51, 128);
+    border: 2px solid rgb(0, 2, 147);
+    border-radius: 50px;
     padding: 30px;
-    margin: 20px;
-    background: #5a76c2f1;
-  }
-.box {
-    border: dashed blue 2px;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-#validation {
-    border-radius: 5px;
+    margin: 0 auto;
+    background: #c6daff;
 }
 div {
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
 }
 input:hover {
-    background : #0565b4;
-    color: #0cf8e4;
+    background : #77a9d3de;
     cursor:pointer;
+}
+label {
+    display: inline-block;
+    width: 150px;
+}
+#validation {
+    box-shadow: 4px 4px 7px black;
+    border-radius: 5px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+#validation:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+div:nth-child(3n+1) {
+    border: dashed rgb(0, 51, 128) 2px;
+}
+#genre label:not(.genre) {
+    width: unset;
+}
+#bouton {
+    text-align: center;
 }
